@@ -1,0 +1,29 @@
+{
+  "name": "demo-apollo-graphql",
+  "version": "1.0.0",
+  "description": "A test ground for Grpahql server on express and apollo client on react",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amarmohammed20/demo-apollo-graphql.git"
+  },
+  "author": "Amar Mohammed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amarmohammed20/demo-apollo-graphql/issues"
+  },
+  "homepage": "https://github.com/amarmohammed20/demo-apollo-graphql#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
