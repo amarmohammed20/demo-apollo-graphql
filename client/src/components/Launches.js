@@ -21,9 +21,11 @@ export default function Launches() {
       <Query query={LAUNCHES_QUERY}>
         {
             ({ loading, error, data }) => {
+                if(loading) return <h2>Loading.....</h2>
                 if(error) return console.error(`See ERROR  - ${error}`);
-                loading ? <h2>Loading....</h2> : <h2>Data Should show see console.log</h2>
-                console.log(`data should be shown in this console.log ${data}`);
+                console.log(data);
+
+                return <h1>Data should be returned</h1>
             }
         }
       </Query>

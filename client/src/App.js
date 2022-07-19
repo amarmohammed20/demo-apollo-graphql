@@ -10,7 +10,7 @@ import Launches from './components/Launches';
 function App() {
 
   const client = new ApolloClient({
-    uri: 'http://localhost:4000/graphlql',
+    uri: 'http://localhost:4000/graphql',
     cache: new InMemoryCache(),
   });
 

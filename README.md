@@ -5,9 +5,10 @@ The data being used is from a api called [spacex](https://docs.spacexdata.com/#e
 # Resources
 Below are some resources I used to complete this application. 
 
-### API
+### Guide
 I have used the following as resources for the app - [Traversy Media Part 1](https://www.youtube.com/watch?app=desktop&v=SEMTj8w04Z8&feature=youtu.be) & [Traversy Media Part 2](https://www.youtube.com/watch?v=-XwkFm5a9lw)
 
+### API
 The URL for the api is [launches](https://api.spacexdata.com/v3/launches) & [launch](https://api.spacexdata.com/v3/launches/{{flight_number}})
 
 ### Axios
