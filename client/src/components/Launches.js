@@ -1,6 +1,7 @@
 import React from 'react';
 import { gql } from '@apollo/client';
-import { Query } from '@apollo/client/react/components'
+import { Query } from '@apollo/client/react/components';
+import LaunchItem from './LaunchItem';
 
 export default function Launches() {
 
@@ -16,7 +17,7 @@ export default function Launches() {
   `;
 
   return (
-    <div>
+    <>
       <h1 className="display-4 my-3">Launches</h1>
       <Query query={LAUNCHES_QUERY}>
         {
@@ -25,10 +26,19 @@ export default function Launches() {
                 if(error) return console.error(`See ERROR  - ${error}`);
                 console.log(data);
 
-                return <h1>Data should be returned</h1>
+                return (
+                    <>
+                    {
+                        data.launches.map( launch => (
+                            <LaunchItem key={launch.flight_number} launch={launch} />
+                        
+                        ))
+                    }
+                    </>
+                )
             }
         }
       </Query>
-    </div>
+    </>
   )
 }

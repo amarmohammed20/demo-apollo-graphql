@@ -40,6 +40,6 @@ If you are learning Grpahql or Apollo client get in touch, I would love to share
 ## Challanges
 With any project nothing really goes exactly to plan. Below are just some hurdles I came across:
 <ul>
-    <li>CORS, I was stuck on were my components Launches was returning undefined for my data. Finally found out that it was the URL I was using in the app.js to get the graphql was not working, it was returning a 404.</li>
+    <li>CORS, I was stuck on were my components Launches was returning undefined for my data. Finally found out that it was the URL I was using in the app.js to get the graphql was not working, it was returning a 404. <strong>Embrassingly the url was wrong for the graphql server</strong> </li>
 </ul>
 
